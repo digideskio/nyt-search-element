@@ -1,19 +1,20 @@
 {
-  "name": "seed-element",
-  "version": "0.0.0",
+  "name": "nyt-search-element",
+  "version": "0.0.1",
   "authors": [
-    "Anonymous <anonymous@example.com>"
+    "Anonymous <yufeng.dev@gmail.com>"
   ],
-  "description": "Element providing solution to no problem in particular.",
+  "description": "Element providing wrapper for NYT Search API.",
   "keywords": [
     "web-component",
     "web-components",
     "polymer",
-    "seed"
+    "nyt",
+    "search"
   ],
-  "main": "seed-element.html",
+  "main": "nyt-search-element.html",
   "license": "MIT",
-  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "homepage": "https://github.com/yufengg/nyt-search-element/",
   "ignore": [
     "/.*",
     "/tests/"
