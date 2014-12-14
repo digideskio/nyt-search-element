@@ -14,13 +14,18 @@
   <title>nyt-search-element Demo</title>
 
   <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
-  <link rel="import" href="bower_components/polymer/polymer.html">
-  <link rel="import" href="nyt-search-element.html">
+
+  <link href="nyt-search-element.html" rel="import" >
+  <link href="bower_components/paper-input/paper-input.html" rel="import"> 
 
 </head>
 <body unresolved>
 
   <p>An example of using <code>&lt;nyt-search-element&gt;</code>:</p>
+
+  <paper-input-decorator label="Your search query terms" floatingLabel>
+    <input is="core-input">
+  </paper-input-decorator>
 
   <nyt-search-element author="author name" id="nyt">
     <h2>Hello nyt-search-element</h2>

@@ -24,6 +24,7 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#~0.5.2"
   },
   "devDependencies": {
-    "web-component-tester": "Polymer/web-component-tester#^2.0.0-rc1"
+    "web-component-tester": "Polymer/web-component-tester#^2.0.0-rc1",
+    "paper-input": "Polymer/paper-input"
   }
 }
