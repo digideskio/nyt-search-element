@@ -13,7 +13,8 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <title>nyt-search-element Demo</title>
 
-  <script src="../webcomponentsjs/webcomponents.min.js"></script>
+  <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+  <link rel="import" href="bower_components/polymer/polymer.html">
   <link rel="import" href="nyt-search-element.html">
 
 </head>
@@ -26,13 +27,8 @@
   </nyt-search-element>
 
 </body>
+
 <script>
-    Polymer({
-        ready: function() {
-            console.log(this.$.nyt);
-            console.log(this.$.nyt.author);
-            console.log(Object.keys(this.$.nyt));
-        }
-    });
 </script>
+
 </html>
