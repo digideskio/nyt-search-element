@@ -21,9 +21,18 @@
 
   <p>An example of using <code>&lt;nyt-search-element&gt;</code>:</p>
 
-  <nyt-search-element>
+  <nyt-search-element author="author name" id="nyt">
     <h2>Hello nyt-search-element</h2>
   </nyt-search-element>
 
 </body>
+<script>
+    Polymer({
+        ready: function() {
+            console.log(this.$.nyt);
+            console.log(this.$.nyt.author);
+            console.log(Object.keys(this.$.nyt));
+        }
+    });
+</script>
 </html>
