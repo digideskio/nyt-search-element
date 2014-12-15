@@ -1,0 +1,7 @@
+{
+  "name": "nyt-search-element#gh-pages",
+  "private": true,
+  "dependencies": {
+    "nyt-search-element": "yufengg/nyt-search-element#master"
+  }
+}

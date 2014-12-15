@@ -1,0 +1,39 @@
+{
+  "name": "nyt-search-element",
+  "authors": [
+    "Anonymous <yufeng.dev@gmail.com>"
+  ],
+  "description": "Element providing wrapper for NYT Search API.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "nyt",
+    "search"
+  ],
+  "main": "nyt-search-element.html",
+  "license": "MIT",
+  "homepage": "https://github.com/yufengg/nyt-search-element/",
+  "ignore": [
+    "/.*",
+    "/tests/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.1",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#~0.5.2"
+  },
+  "devDependencies": {
+    "web-component-tester": "Polymer/web-component-tester#^2.0.0-rc1",
+    "paper-input": "Polymer/paper-input"
+  },
+  "_release": "0adb614a81",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "0adb614a81bb09684c07505eaf9ededbb2944dba"
+  },
+  "_source": "git://github.com/yufengg/nyt-search-element.git",
+  "_target": "master",
+  "_originalSource": "yufengg/nyt-search-element",
+  "_direct": true
+}

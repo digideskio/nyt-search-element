@@ -1,0 +1,94 @@
+<!--
+    @license
+    Copyright (c) 2014 Yufeng Guo. All rights reserved.
+-->
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<!--
+Element wrapping the New York Times Search API
+
+##### Example
+
+    <nyt-search-element></nyt-search-element>
+
+@element nyt-search-element
+@blurb Element wrapping the New York Times Search API
+@status alpha
+@homepage http://yufengg.github.io/nyt-search-element
+-->
+<polymer-element name="nyt-search-element" attributes="notitle author">
+
+  <template>
+
+    <link rel="stylesheet" href="nyt-search-element.css">
+
+    <h1>Hello from nyt-search-element</h1>
+    <content></content>
+
+  </template>
+
+  <script>
+
+    Polymer({
+      /**
+       * The `author` attribute sets an initial author
+       *
+       * @attribute author
+       * @type string
+       * @default 'Yufeng Guo'
+       */
+      author: 'Yufeng Guo',
+
+      /**
+       * `fancy` is a property that does something fancy.
+       *
+       * @property fancy
+       * @type bool
+       * @default false
+       */
+      fancy: false,
+
+      ready: function() {
+        // Ready is a lifecycle callback.
+        // You can do setup work in here.
+        // More info: http://www.polymer-project.org/docs/polymer/polymer.html#lifecyclemethods
+            console.log(this.author);
+            console.log(Object.keys(this));
+      },
+
+      /**
+       * The `sayHello` method will return a greeting.
+       *
+       * @method sayHello
+       * @param {String} greeting Pass in a specific greeting.
+       * @return {String} Returns a string greeting.
+       */
+      sayHello: function(greeting) {
+        var response = greeting || 'Hello World!';
+        return 'nyt-search-element says, ' + response;
+      },
+
+      /**
+       * The `nyt-search-element-lasers-success` event is fired whenever we
+       * call fireLasers.
+       *
+       * @event nyt-search-element-lasers-success
+       * @param {Object} detail
+       *   @param {string} detail.sound An amazing sound.
+       */
+
+      /**
+       * The `fireLasers` method will fire the lasers. At least
+       * it will dispatch an event that claims lasers were fired :)
+       *
+       * @method fireLasers
+       */
+      fireLasers: function() {
+        this.fire('nyt-search-element-lasers-success', { sound: 'Pew pew pew!' });
+      }
+
+    });
+
+  </script>
+
+</polymer-element>
